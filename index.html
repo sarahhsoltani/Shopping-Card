@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./image/shopping-cart-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!----------------------- Start Navbar ------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Mark</a>
+              <a class="nav-link linkk" aria-current="page" href="#">News</a>
+
+              <div class="advanced-search">
+                <button type="button" class="category-btn">Categories</button>
+                <div class="input-group">
+                  <input type="text" placeholder="What do you need?" />
+                  <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+
+              <a class="nav-link linnk" href="#"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <a class="nav-link linnk" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <a class="nav-link linnk" href="#"
+                ><i class="fas fa-user-circle"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!----------------------- End Navbar ------------------->
+    </header>
+    <main>
+      <!---------------------------------- Start Section one  ---------------------->
+      <div class="container-fluid box-one">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-12">
+            <img
+              class="img-1 image-fluid"
+              src="./image/latest-man.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6 item-one">
+            <h1>Find The Best Product from Our Shop</h1>
+            <h3>AN ONLINE EXCLUSIVE</h3>
+            <p>
+              Designers who are interesten creating state ofthe Best Collection
+              of This Month.A special, gemstone-hued iteration of the Medusa
+              Amplified print is featured in a capsule collection available
+              exclusively online.
+            </p>
+            <a href="#" class="black-btn">Shop now</a>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- End Section one  ------------------------>
+
+      <!---------------------------------- Start Section two  ------------------------>
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-12 text-center title-one mt-2">
+          <h1>
+            BRING THE FUTURE TO THE <br />
+            LIGHT
+          </h1>
+          <p>GNVL is proud to empower to next generation of creators</p>
+          <div class="d-flex justify-content-center">
+            <button class="black-btn explore">Shop</button>
+
+            <button class="black-btn explore">Explore</button>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- End Section two  ------------------------>
+      <!---------------------------------- Start Section three  ---------------------->
+      <div class="container">
+        <div class="col-ms-12 mb-3">
+          <h1>For who?</h1>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="./image/banner-1.jpg" class="image-fluid w-100" alt="" />
+            <h3>Men's</h3>
+          </div>
+          <div class="col-md-4">
+            <img src="./image/banner-2.jpg" class="image-fluid w-100" alt="" />
+            <h3>Women's</h3>
+          </div>
+          <div class="col-md-4">
+            <img src="./image/banner-3.jpg" class="image-fluid w-100" alt="" />
+            <h3>Kid's</h3>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- End Section  three --------------------->
+      <!---------------------------------- Start Section  four --------------------->
+      <div class="container">
+        <div class="col-md-12 my-5">
+          <h1>Featured marks</h1>
+        </div>
+      </div>
+      <!----------------------Start brand------------>
+      <div class="container text-align-center">
+        <div class="container">
+          <ul
+            class="nav nav-pills site-tab-nav mb-3"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item me-2" role="presentation">
+              <button
+                class="nav-link active mb-3"
+                id="pills-all"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-alll"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All brand
+              </button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+              <button
+                class="nav-link mb-3"
+                id="pills-nike"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-nikee"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Nike
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link me-2 mb-3"
+                id="pills-gucci"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-guccii"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Gucci
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link me-2 mb-3"
+                id="pills-luis"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-luiss"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Luis Vuitton
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link mb-3"
+                id="pills-versaci"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-versacii"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Versaci
+              </button>
+            </li>
+          </ul>
+          <!-------------------Start brand  --------------->
+          <div class="tab-content" id="pills-tabContent">
+            <!-------------------------Start all Brand  ---------->
+            <div
+              class="tab-pane fade show active"
+              id="pills-alll"
+              role="tabpanel"
+              aria-labelledby="pills-all"
+            >
+              <div class="row">
+                <!-- ---card 1 ---->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/360_443497_2UZIN_4165_001_100_0000_Light-Sac-paule-GGMarmont-Multicolor-petite-taille.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">shorts</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-----Card 2  -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/Pantalon_de_survetement_Primeblue_SST_Noir_GD2361_21_model.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">sweater</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- --card 3 -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/Chaussure_Gazelle_Bleu_BB5478_01_standard.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">cap yellow</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------------------------end all Brand  ---------->
+            <!-------------------------Start Nike Brand  ---------->
+            <div
+              class="tab-pane fade"
+              id="pills-nikee"
+              role="tabpanel"
+              aria-labelledby="pills-nike"
+            >
+              <div class="row">
+                <!-- ---card 1 ---->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/product1.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">shorts</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-----Card 2  -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/product2.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">sweater</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- --card 3 -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/product-5.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">cap yellow</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------------------------End Nike Brand  ---------->
+            <!-------------------------Start gucci Brand  ---------->
+            <div
+              class="tab-pane fade"
+              id="pills-guccii"
+              role="tabpanel"
+              aria-labelledby="pills-gucci"
+            >
+              <div class="row">
+                <!-- ---card 1 ---->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/product-6.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">shorts</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-----Card 2  -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/man-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">sweater</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- --card 3 -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/popular2.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">cap yellow</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------------------------End gucci Brand  ---------->
+            <!-------------------------Start luis Brand  ---------->
+            <div
+              class="tab-pane fade"
+              id="pills-luiss"
+              role="tabpanel"
+              aria-labelledby="pills-luis"
+            >
+              <div class="row">
+                <!-- ---card 1 ---->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/man-1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">shorts</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-----Card 2  -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/man-4.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">sweater</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- --card 3 -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/women-4.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">cap yellow</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------------------------End luis Brand  ---------->
+            <!-------------------------Start versaci Brand  ---------->
+            <div
+              class="tab-pane fade"
+              id="pills-versacii"
+              role="tabpanel"
+              aria-labelledby="pills-versaci"
+            >
+              <div class="row">
+                <!-- ---card 1 ---->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 22rem">
+                    <img
+                      src="./image/air-max-2090-womens-shoe-nk9ZbX.jfif"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">shorts</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-----Card 2  -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/man-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">sweater</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand mt-2 px-5"
+                        >Add to Card</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- --card 3 -->
+                <div class="col-md-4">
+                  <!-- card 1 -->
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./image/women-1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title">cap yellow</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">550 dt</h5>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------------------------End versaci Brand  ---------->
+          </div>
+          <!-------------------Start brand  --------------->
+          <!-- --------------------------------------End Tabs --------------------->
+        </div>
+      </div>
+      <!---------------------------------- End Section  four --------------------->
+      <!---------------------------------- Start Section  five --------------------->
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-12">
+          <h1>New arrivals</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./image/card-man.png" alt="" />
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-12">
+                <!-- card 1 -->
+                <div class="card">
+                  <img
+                    src="./image/sportswear-swoosh-womens-woven-jacket-1b4wg6.jfif"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!-- -----------Card 2------ -->
+                <div class="card">
+                  <img
+                    src="./image/run-division-womens-transform-running-jacket-M2fn7X.jfif"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!-- ----------------end card 2 -->
+              </div>
+              <div class="col-md-4 col-sm-12 col-12">
+                <!-- card 1 -->
+                <div class="card">
+                  <img
+                    src="./image/sportswear-little-kids-dress-41dgnM.jfif"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!------------  ------>
+                <div class="card">
+                  <img
+                    src="./image/throwback-mens-basketball-pants-3cmwhW.jfif"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!-- -------------- -->
+              </div>
+              <div class="col-md-4 col-sm-12 col-12">
+                <!-- card 1 -->
+                <div class="card">
+                  <img
+                    src="./image/GQ4152_000_plp_model (1).jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!-- --------- ------>
+                <div class="card">
+                  <img
+                    src="./image/640716_0YK0G_1000_001_065_0000_Light-Mini-sac-main-Gucci-Horsebit1955.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title">cap yellow</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">550 dt</h5>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-brand px-5">Add to Card</a>
+                  </div>
+                </div>
+                <!---------------  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- End Section  five --------------------->
+      <!---------------------------------- Start Section  Six --------------------->
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-12 mt-5">
+          <h1>Branded Customization</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 box-item mt-3">
+            <h3>
+              Brands allow consumers to personalize both packaging and product
+            </h3>
+            <select
+              class="form-select mt-3"
+              aria-label="Default select example"
+            >
+              <option selected>Shoose product</option>
+              <option value="1">Shirt</option>
+              <option value="2">Sac</option>
+              <option value="3">jackets</option>
+            </select>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+      <!---------------------------------- End Section  Six --------------------->
+    </main>
+    <!-------------- Script Js  -------------->
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
