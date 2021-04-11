@@ -4,27 +4,28 @@ let carts=document.querySelectorAll('.add-cart');
 let products=[
     {
         name:"shirt",
-        tag:"grey",
+        tag:"360_443497_2UZIN_4165_001_100_0000_Light-Sac-paule-GGMarmont-Multicolor-petite-taille.jpg",
         price:15,
-        inCart:"0"
+        inCart:0
     },
     {
         name:"cat",
-        tag:"blue",
+        tag:"Pantalon_de_survetement_Primeblue_SST_Noir_GD2361_21_model.jpg",
         price:30,
-        inCart:"0"
+        inCart:0
     },
     {
         name:"dress",
-        tag:"red",
+        tag:"Chaussure_Gazelle_Bleu_BB5478_01_standard.png",
         price:20,
-        inCart:"0"
+        inCart:0
     }
 ]
 // boucle pour 
 for (let i=0;i<carts.length;i++){
     carts[i].addEventListener('click',()=>{
         cartNumbers(products[i]);
+        totalCost(products[i])
     })
 }
 // loalstorge to the cart when i onload the page
@@ -50,14 +51,112 @@ function cartNumbers(product){
     document.querySelector('.linnk span').textContent=1;
     }
     setItems(product);
+    
 }
     function setItems(product){
-       console.log('object',product)
-       product.inCart=1;
-       let cartItems={
-           [product.tag]:product
-       }
+        // on va tester si le produit existe in local storge ou nn 
+        let cartItems=localStorage.getItem("productsInCart")
+        // il affiche un json
+        console.log('my card items are',cartItems)
+        // il faut convertir en un objet js nrml 
+        cartItems=JSON.parse(cartItems)
+    //     console.log('my card items are',cartItems)
+    //    console.log('object',product)
+    // on va tester si le prduit existe en ajoute au locl si nn va mettr son nombr +1
+    if (cartItems != null){
+        // on va tester sur le 2ém prod s'il est ajouté on update locl est le 1er prdc rest fixe
+        if (cartItems[product.tag]== undefined){
+            cartItems={
+                ...cartItems,[product.tag]:product
+            }
+        }
+        cartItems[product.tag].inCart+=1;
+    }
+    else{
+        product.inCart=1;
+        cartItems={
+            [product.tag]:product
+        }
+    }
+      
        localStorage.setItem('productsInCart',JSON.stringify(cartItems));
     }
-// il faut appeler vue qu'il est n'est attacher par listner comme l'autre
+
+    // Total of price
+    function totalCost(product){
+        let cartCost=localStorage.getItem("totalCost")
+        console.log(`my total cost are`, totalCost)
+        console.log(typeof cartCost)
+        if(cartCost !=null){
+            cartCost=parseInt(cartCost);
+            localStorage.setItem('totalCost',cartCost+product.price)
+        }
+        else{
+            localStorage.setItem('totalCost',product.price)
+        }
+    }
+   
+    
+     // Remove 
+     
+     
+    
+
+    
+    
+    // page cart
+function displayCard(){
+    let cardItems=localStorage.getItem('productsInCart');
+    cardItems=JSON.parse(cardItems);
+    console.log('in this card is',cardItems)
+    let produtContainer=document.querySelector(".products");
+    let cartCost=localStorage.getItem("totalCost")
+    if (cardItems && produtContainer){
+        produtContainer.innerHTML=''; 
+        Object.values(cardItems).map(item=>{
+            produtContainer.innerHTML+=
+            `<div class="d-flex justify-content-around align-items-center">
+            
+            <div class="product"> <img src="./image/${item.tag}" class="w-10"></div>
+            <div class="name"> <h4>${item.name}</h4></div>
+            <div >
+            <select
+            class="form-select "
+            aria-label="Default select example">
+            <option selected>your size</option>
+            <option value="1">Small</option>
+            <option value="2">Over size</option>
+            <option value="3">Medum</option>
+            </select> </div>
+            <div class="price"> <p>${item.price},00 Dt</p></div>
+            <div class="quantity"><i class="fas fa-arrow-alt-circle-left"></i><span>${item.inCart}</span>
+            <i class="fas fa-arrow-alt-circle-right"></i>
+            </div>
+            <div class="total"><p>${item.inCart*item.price},00 Dt</p></div>
+            <div><i class="fas fa-trash" id="remove"></i> </div>
+            
+            </div>
+            <hr>
+            `
+            console.log("my image",item.tag)
+      
+        })
+
+        produtContainer.innerHTML +=`
+        <div class="totalContainer d-flex justify-content-around mt-5"> 
+        
+        <div> <a class="back-home" href="index.html"><i class="fas fa-undo-alt"></i> Continue Shopping</a></div>
+        <div class="totall"> <h5> Delevry : Free</h5>
+        <h5> SubTotal : ${cartCost},00 Dt</h5>
+        <a href="#" class="btn btn-brand px-5 mt-3">Checkout</a>
+        </div>
+       </div>
+        `
+    }
+    
+}
+
+
+// il faut appeler vue qu'il est n'est attacher par listner comme l'autre //when i onload the page
  onLoadCartNumbers()
+ displayCard()

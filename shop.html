@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart page</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./image/shopping-cart-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!----------------------- Start Navbar ------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Mark</a
+              >
+              <a class="nav-link linkk" aria-current="page" href="index.html"
+                >News</a
+              >
+
+              <div class="advanced-search">
+                <button type="button" class="category-btn">Categories</button>
+                <div class="input-group">
+                  <input type="text" placeholder="What do you need?" />
+                  <button type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+
+              <a class="nav-link linnk" href="#"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <a class="nav-link linnk" href="shop.html"
+                ><i class="fas fa-shopping-cart"></i>
+                <span
+                  style="
+                    background: #e7ab3c !important;
+                    border-radius: 11px !important;
+                    padding: 0px 5px 0px 5px !important;
+                  "
+                  >0</span
+                ></a
+              >
+              <a class="nav-link linnk" href="#"
+                ><i class="fas fa-user-circle"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!----------------------- End Navbar ------------------->
+    </header>
+    <!------------------Start Main  -------->
+    <main>
+      <div class="products-container mt-5 text-center">
+        <h1 style="margin-top: 6rem">Your Shopping Bag</h1>
+        <div class="d-flex justify-content-around align-items-center">
+          <div class="mt-5 product"><h5>Images</h5></div>
+          <div class="mt-5 name"><h5>Name Product</h5></div>
+          <div class="mt-5 size"><h5>Size</h5></div>
+          <div class="mt-5 price"><h5>Price</h5></div>
+          <div class="mt-5 quantity"><h5>Quantity</h5></div>
+          <div class="mt-5 total"><h5>Total</h5></div>
+          <div class="mt-5" id="remove"><h5>Remove</h5></div>
+        </div>
+        <hr />
+        <div class="products"></div>
+      </div>
+    </main>
+    <!------------------End Main  -------->
+    <!----------------------- Script Js ----------------->
+
+    <script src="main.js"></script>
+  </body>
+</html>

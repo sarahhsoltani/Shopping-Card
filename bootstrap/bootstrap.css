@@ -6465,7 +6465,12 @@ border: 2px solid #000;
 .border-5 {
   border-width: 5px !important;
 }
-
+.w-10{
+  width: 81px;
+}
+.mt-6{
+  margin-top: 4rem !important;
+}
 .w-25 {
   width: 25% !important;
 }
