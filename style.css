@@ -144,3 +144,25 @@
     font-weight: 500;
     color: #e7ab3c;
   }
+  .newsletter{
+    padding: 0.514rem;
+    font-size: .9375rem;
+    background-color: transparent;
+    margin: 0;
+    color: #000;
+    border-radius: 29px;
+}
+.btn-new{
+  border-top-right-radius: 20px;
+  margin-left: -22px;
+  padding: 1px 20px 1px 17px;
+  background: #e7ab3c;
+  color: white;
+}
+.leaad{
+  
+    font-size: .75rem;
+   
+    color: #757575;
+    width: 100%;
+}
