@@ -96,26 +96,18 @@ function cartNumbers(product){
         }
     }
    
-    
-     // Remove 
-     
-     
-    
-
-    
-    
     // page cart
 function displayCard(){
     let cardItems=localStorage.getItem('productsInCart');
     cardItems=JSON.parse(cardItems);
     console.log('in this card is',cardItems)
-    let produtContainer=document.querySelector(".products");
+    let produtContainer=document.querySelector(".prod");
     let cartCost=localStorage.getItem("totalCost")
     if (cardItems && produtContainer){
         produtContainer.innerHTML=''; 
         Object.values(cardItems).map(item=>{
             produtContainer.innerHTML+=
-            `<div class="d-flex justify-content-around align-items-center">
+            `<div class="d-flex justify-content-around align-items-center rmv">
             
             <div class="product"> <img src="./image/${item.tag}" class="w-10"></div>
             <div class="name"> <h4>${item.name}</h4></div>
@@ -133,17 +125,17 @@ function displayCard(){
             <i class="fas fa-arrow-alt-circle-right"></i>
             </div>
             <div class="total"><p>${item.inCart*item.price},00 Dt</p></div>
-            <div><i class="fas fa-trash" id="remove"></i> </div>
+            <div><button class="remove">removeee</button> </div>
             
             </div>
             <hr>
             `
             console.log("my image",item.tag)
-      
+           
         })
 
         produtContainer.innerHTML +=`
-        <div class="totalContainer d-flex justify-content-around mt-5"> 
+        <div class="totalContainer d-flex justify-content-around mt-5 "> 
         
         <div> <a class="back-home" href="index.html"><i class="fas fa-undo-alt"></i> Continue Shopping</a></div>
         <div class="totall"> <h5> Delevry : Free</h5>
@@ -155,8 +147,45 @@ function displayCard(){
     }
     
 }
+// -------------------------------------------
+// Remove item
+// const removeItem=document.getElementsByClassName('remove');
+// console.log('removeItem :>> ', removeItem);
+// for(var i=0;i<removeItem.length;i++){
+//     let btnButton=removeItem[i];
+//     console.log('nombre de card',btnButton);
+//     btnButton.addEventListener('click',()=>{
+//         console.log('sara soltani');
+        // let cardItem=JSON.parse(localStorage.getItem('productsInCart'));
+        // console.log("jjjjjjj",event.target.parentElement.parentElement.children[1].children[0].textContent);
+        // cardItem.forEach(item=>{
+        //     if (item.name != event.target.parentElement.parentElement.children[1].children[0].textContent){
+        //         cartItems.push(item)
+        //     }
+        // });
+    //     localStorage.setItem('productsInCart',JSON.stringify(cartItems));
+        
+    // window.location.reload()
+//     })
+   
+// }
+// -------------------------
+let buttonActivator = () => {
+    let cartCost=localStorage.getItem("totalCost")
+    let removeButtons =  document.querySelectorAll(".remove")
 
+removeButtons.forEach(el => {
+    el.addEventListener("click", (e)=>{
+         let row = e.target.parentNode.parentNode;
+         document.querySelectorAll(".rmv")[0].remove(row)
+         e.preventDefault();
+    })
+
+ })
+
+} 
 
 // il faut appeler vue qu'il est n'est attacher par listner comme l'autre //when i onload the page
  onLoadCartNumbers()
  displayCard()
+ buttonActivator()

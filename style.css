@@ -15,7 +15,15 @@
 	color: #252525;
 	position: relative;
 }
-
+ .icons{
+  padding-bottom: 11px;
+  border: solid 1px black;
+  border-radius: 37px;
+  padding: 0px 17px 14px 20px
+ }
+ .back{
+  color: black;
+ }
 
  .navbar .nav-link{
      padding-left:20px !important;
@@ -158,6 +166,7 @@
   padding: 1px 20px 1px 17px;
   background: #e7ab3c;
   color: white;
+  border: none
 }
 .leaad{
   
@@ -165,4 +174,7 @@
    
     color: #757575;
     width: 100%;
+}
+footer{
+  background-color: #F0F0F0;
 }
