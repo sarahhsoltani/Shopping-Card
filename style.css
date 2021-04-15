@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap%27');
+body{
+  font-family: 'Kiwi Maru',
+serif;
+}
 .advanced-search {
 	height: 50px;
 	border: 1px solid #ebebeb;
@@ -15,6 +20,39 @@
 	color: #252525;
 	position: relative;
 }
+/* ---------------------------- */
+nav>.nav-link {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+.sara:hover{
+  color: red !important;
+}
+nav .nav-link>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  position: relative;
+}
+
+nav>.nav-link>a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color:#e7ab3c;
+  position: absolute;
+  bottom: 5px;
+  transition: 0.5s;
+  left:0;
+}
+
+nav>.nav-link>a:hover::after {
+  width: 100%;
+  color: red;
+}
+/* ---------------------------- */
  .icons{
   padding-bottom: 11px;
   border: solid 1px black;
@@ -146,6 +184,15 @@
   .product{
     width: 20px;
   }
+  .new{
+    text-align: center;
+    letter-spacing: 7px;
+   
+  }
+  .fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+  }
   .back-home{
     text-decoration: none;
     font-size: 19px;
@@ -176,5 +223,12 @@
     width: 100%;
 }
 footer{
-  background-color: #F0F0F0;
-}
+  
+  background-color: #F0F0F0;}
+
+    body .dark-theme{
+          background-color: #152028;
+          padding:0;
+          margin:0;
+    
+ }

@@ -2889,7 +2889,8 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -2909,9 +2910,9 @@ textarea.form-control-lg {
 }
 
 .btn-brand {
-  color: #fff;
-  background-color: #d29f26;
-  border-color: #d29f26;
+  color: black;
+  background-color: white;
+  border-color:  #d29f26;
 }
 .btn-brand:hover {
   color: #fff;
