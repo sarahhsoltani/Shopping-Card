@@ -20,6 +20,10 @@ serif;
 	color: #252525;
 	position: relative;
 }
+.paragraphe{
+  font-size: 13px;
+    line-height: 28px;
+}
 /* ---------------------------- */
 nav>.nav-link {
   display: inline;
@@ -57,7 +61,7 @@ nav>.nav-link>a:hover::after {
   padding-bottom: 11px;
   border: solid 1px black;
   border-radius: 37px;
-  padding: 0px 17px 14px 20px
+  padding: 6px 7px 8px 7px
  }
  .back{
   color: black;
@@ -232,3 +236,79 @@ footer{
           margin:0;
     
  }
+ .exploree{
+  background: white;
+  color: black;
+
+  padding: 20px 18px !important;
+ }
+ .shop{
+  border: 1px solid black;
+  border-radius: 17px;
+  padding: 6px;
+ }
+ h5{
+  font-weight: 600;
+ }
+ .product-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e7ab3c;
+ }
+ .btnn{
+  display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 12px 30px;
+	color: #ffffff;
+	background: #e7ab3c;
+	text-transform: uppercase;
+  text-decoration: none;
+ }
+/*--------------------- Deal Of The Week-----------------------*/
+ .timer{
+   background-image: url('./image/time-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 65vh;
+ }
+ .deal-of-week {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   margin-left: 65px;
+   margin-right: 65px;
+ }
+ 
+ .countdown-timer {
+   text-align: center;
+   margin-bottom: 50px;
+ }
+ 
+ .countdown-timer .cd-item {
+   display: inline-block;
+   background: #ffffff;
+   margin-right: 35px;
+   padding: 10px 14px;
+   border-radius: 5px;
+ }
+ 
+ .countdown-timer .cd-item:last-child {
+   margin-right: 0;
+ }
+ 
+ .countdown-timer .cd-item span {
+   color: #e7ab3c;
+   font-weight: 700;
+   line-height: 40px;
+   font-size: 36px;
+ }
+ 
+ .countdown-timer .cd-item p {
+   font-size: 16px;
+   color: #b2b2b2;
+   margin-bottom: 0;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+ }
+ 
+ 
