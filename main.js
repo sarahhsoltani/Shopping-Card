@@ -67,6 +67,7 @@ function cartNumbers(product){
     if (productNumbers){
         localStorage.setItem('cartNumbers',productNumbers+1);
         document.querySelector('.linnk span').textContent=productNumbers+1;
+        alert('produit ajouté')
     }
     // si on a p d produit il faut mettr à 1 ainsi que panier
     else{
@@ -269,7 +270,7 @@ let buttonActivator = () => {
             
 //         })
 //     }
-//  }
+//  };
 
 // -------------------------------------------------------------------------------------------------------
 
